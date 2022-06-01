@@ -38,7 +38,7 @@ public class SalesStatisticsService {
         return numMinMonth + 1;
     }
 
-    public int contMonthBelowAverageSales(int[] sales) {
+    public int countMonthBelowAverageSales(int[] sales) {
         int count = 0;
         for (int sale : sales) {
             if (sale < calculateAverage(sales)) {
